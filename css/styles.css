@@ -1,0 +1,112 @@
+:root{
+    /* comentario usando ctrl+k+c */
+    --blue-talento-tech:#002552;
+    --blanco-talento-tech:white;
+    --negro-talento-tech:black;
+
+    --ms:16px; 
+    --md:32px;
+    --lg:56px;
+}
+
+body{
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+
+}
+
+h1{
+    font-size: 50px;
+}
+
+.login{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.form-container{
+    display: grid;
+    margin: 50px;
+    grid-template-rows: auto 1fr auto;
+    width: 400px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-tech{
+    width: 150px;
+    margin-bottom: 50px;
+    justify-self: center;
+    background-color: var(--blue-talento-tech);
+    border-radius: 10px;
+
+}
+.titulo{
+    font-size: var(--lg);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+}
+
+input{
+    background:var(--blanco-talento-tech);
+    /* border: none; */
+    border-radius: 10px;
+    height: 40px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+.boton{
+    background-color: var(--blue-talento-tech);
+    border-radius: 10px;
+    border: none;
+    color: var(--blanco-talento-tech);
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.reg-pass{
+    
+    display:flex;
+    flex-direction: row;
+    margin:5px;
+    font-size: var(--ms);
+}
+
+.ask-regis{
+    text-align: center;
+    margin: 25px;
+    
+}
+
+.data{
+   text-align: center;
+   margin: 25px;
+}
+
+.change-pass{
+    font-size: var(--md);
+}
+
+.enviar-button{
+    text-decoration: none;
+    color:inherit;
+}
+
+/* @media (min-width: 800px){
+    .logo-tech{
+        display: none;
+    }
+} */
+
