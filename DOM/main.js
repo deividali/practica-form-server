@@ -1,6 +1,3 @@
-// defino una constante llamada botonNombre y la leo el id desde el HTML
-const botonNombre = document.getElementById("boton_registro")
-
 function validForm(){
 
     const fields=["email", "password", "password2"]
@@ -48,6 +45,10 @@ function validForm(){
     }
    
 }
+
+// defino una constante llamada botonNombre y la leo el id desde el HTML
+const botonNombre = document.getElementById("boton_registro")
+
 
 // Esucho esa constante hasta que se haga click, y realizo la siguient funcion
 botonNombre.addEventListener("click",()=>{

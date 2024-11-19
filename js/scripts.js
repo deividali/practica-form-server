@@ -1,5 +1,6 @@
 let botonName = document.getElementsByClassName("boton")
 let arrayBoton = Array.from(botonName);
+
 let idElement=[];
     arrayBoton.forEach((elemento)=>{
         idElement=elemento.id
@@ -60,17 +61,20 @@ else{
                 else{
                     const output = document.getElementById("output");
                     output.innerHTML =`
-                    <h2>${responseData}</h2>
+                    <h2>${responseData.message}: ${email}</h2>
                     `;
                 }
             }}
         catch (error){
             console.log(error);
         }
-
 });
-
-
-
 }
 
+let escribirenRegister = document.getElementById('email').value
+
+
+// escribirenRegister.addEventListener("click",()=>{
+//     console.log(escribirenRegister)
+//     escribirenRegister = "correo@123.com"
+// })

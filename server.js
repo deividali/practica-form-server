@@ -34,10 +34,10 @@ app.post('/form',(req,res)=>{
     if(idElement=='boton_recovery'){
         console.log("Se ingresa a recovery")
         if(filedEmail==email){
-            res.status(200).json({message: 'true', redirect: '/register.html'});
+            res.status(200).json({message: 'true', redirect: '/register.html', email: email});
         }
         else{
-            res.status(200).json("El correo es incorrecto")
+            res.status(200).json({message: "El correo es incorrecto", email: email})
         }
     }
 });
